@@ -54,12 +54,15 @@ def main():
     print("\n")
     print("(1) ASCII code point (integer) to Unicode representation")
     print("(2) Unicode representation to ASCII code point")
+    print("(3) Exit")
     # Match statements are nicer than writing an if else chain
-    match (input("1 or 2\n")):
+    match (input("1, 2 or 3\n")):
         case "1":
             convertToUnicode()
         case "2":
             convertToASCII()
+        case "3":
+            exit()
         # The "_" case is the default case, and it's used when none of the other cases match
         case _:
             print("Invalid input")
